@@ -31,7 +31,7 @@
                   />
                 </section>
                 <div class="form-group text-right mb-0">
-                  <button class="btn btn-primary" type="submit">Log in</button>
+                  <button class="btn btn-primary" type="submit">Login</button>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default {
         .signInWithEmailAndPassword(info.email, info.password)
         .then(
           () => {
-            this.$router.push('/')
+            this.$router.push('/rooms')
           },
           error => {
             this.error = error.message
